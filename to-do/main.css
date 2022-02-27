@@ -1,0 +1,137 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height :100vh;
+    background-color: white;
+    color :black
+}
+
+header{
+    padding : 2rem 1rem;
+    max-width:800px;
+    width:100%;
+    margin:0 auto;
+}
+
+header h1{
+    font-size:2.5rem;
+    font-weight:300;
+    color :grey;
+    margin-bottom: 1rem;
+}
+
+#new-task{
+    display:flex;
+}
+
+input,button{
+    appearance: none;
+    border :none;
+    outline:none;
+    background:none;
+}
+
+#new-task-id{
+    flex: 1 1 0%;
+    background-color: rgb(170, 180, 24);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+
+}
+#new-task-id::placeholder {
+    color:rgb(116, 8, 187);
+}
+#Add{
+    color :rgb(241, 236, 236);
+    font-size: 1.25rem;
+    font-weight:700;
+    background-color: rgb(47, 45, 151);
+    cursor :pointer;
+}
+
+#Add:hover{
+    opacity :0.8;
+}
+#Add:active{
+    opacity :0.6;
+}
+
+main{
+    flex: 1 1 0%;
+    padding :2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.to-list{
+    padding: 1rem;
+}
+
+.to-list h2{
+    font-size:1.5rem;
+    font-weight: 300;
+    color:grey;
+    margin-bottom: 1rem;
+
+}
+
+#tasks .task{
+    display :flex;
+    justify-content: space-between;
+    background-color: aqua;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#tasks .task .content{
+    flex:1 1 0%;
+}
+
+#tasks .task .content .text{
+    font-size: 1.125rem;
+    width: 100%;
+    display:block;
+    
+}
+
+#tasks .task .content .text:not(:read-only){
+    color:brown;
+}
+
+#tasks .task .actionButtons{
+    display: flex;
+    margin:0 -0.5rem;
+}
+
+.task .actionButtons button{
+    cursor :pointer;
+    margin :0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+   
+}
+
+.task .actionButtons .edit{
+    background-color: rgb(12, 160, 86);
+    color :rgb(241, 236, 236);
+    
+} 
+.task .actionButtons .delete{
+    background-color: crimson;
+    color: white;
+    }
+
+
+
+
